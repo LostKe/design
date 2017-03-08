@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
 public class ProxyHandler<T> implements InvocationHandler{
 	
 	private Object target;
-	
+	//生成代理对象	
 	public T bind(Object target){
 		this.target=target;
 		return (T)Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
