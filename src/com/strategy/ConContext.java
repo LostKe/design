@@ -19,4 +19,8 @@ public class ConContext {
     public void contextInterface(){
         strategy.doSomething();
     }
+
+    public void setStrategy(Strategy sy){
+        this.strategy=sy;
+    }
 }

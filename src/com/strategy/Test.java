@@ -11,6 +11,10 @@ public class Test {
         ConcreateB b=new ConcreateB();
         ConContext con=new ConContext(a);
         con.contextInterface();
+
+        con.setStrategy(b);
+        con.contextInterface();
+
     }
 
 
