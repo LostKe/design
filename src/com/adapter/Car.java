@@ -13,11 +13,12 @@ public class Car {
 	/**
 	 * 组装
 	 */
-	private void assemble(){
+	public void assemble(){
 		mCount=adapter.getCount();
 		
 		for (int i = 0; i < mCount; i++) {
-				//这里 获得不同的零件  
+				//这里 获得不同的零件
+			System.out.println("组装零件："+i);
 			  Part part=(Part) adapter.getItem(i);
 		}
 	}
